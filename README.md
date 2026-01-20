@@ -133,7 +133,7 @@ UNLICENSED - Todos os direitos reservados
 
 ## 👥 Desenvolvido por
 
-**Webyte | Tecnologia Laravel**
+**Webyte | Hub**
 
 ---
 
