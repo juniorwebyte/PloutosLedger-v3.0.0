@@ -1,0 +1,73 @@
+version: '3.8'
+
+services:
+  # Aplicação
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "4000:4000"
+    environment:
+      - NODE_ENV=production
+      - DATABASE_URL=postgresql://ploutos:ploutos123@db:5432/ploutosledger
+      - JWT_SECRET=${JWT_SECRET:-change-me-in-production}
+      - JWT_EXPIRES_IN=7d
+      - SESSION_SECRET=${SESSION_SECRET:-change-me-in-production}
+      - VITE_API_URL=http://localhost:4000
+      - VITE_API_BASE_URL=http://localhost:4000
+      - PORT=4000
+    depends_on:
+      db:
+        condition: service_healthy
+    restart: unless-stopped
+    networks:
+      - ploutos-network
+    volumes:
+      - ./logs:/app/logs
+
+  # Banco de dados PostgreSQL
+  db:
+    image: postgres:15-alpine
+    environment:
+      - POSTGRES_USER=ploutos
+      - POSTGRES_PASSWORD=ploutos123
+      - POSTGRES_DB=ploutosledger
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ploutos"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+    networks:
+      - ploutos-network
+
+  # Nginx (opcional, para produção)
+  nginx:
+    image: nginx:alpine
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./ssl:/etc/nginx/ssl:ro
+    depends_on:
+      - app
+    restart: unless-stopped
+    networks:
+      - ploutos-network
+    profiles:
+      - production
+
+networks:
+  ploutos-network:
+    driver: bridge
+
+volumes:
+  postgres_data:
+    driver: local
+

@@ -1,0 +1,80 @@
+# Arquivos e pastas a ignorar no deploy Vercel
+
+# Dependências
+node_modules/
+.pnp
+.pnp.js
+
+# Build local
+dist/
+dist-server/
+build/
+.vite/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Ambiente local
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Servidor (não necessário para frontend)
+server/
+prisma/
+ecosystem.config.js
+package-server.json
+server-simple.js
+start-server.bat
+iniciar-servidor.ps1
+setup-git.ps1
+
+# Scripts de deploy local
+deploy.sh
+DEPLOY.md
+DEPLOY_VPS.md
+
+# Documentação
+doc/
+*.md
+!README.md
+
+# Arquivos temporários
+*.zip
+*.tmp
+*.temp
+
+# Configurações locais
+cms-config.json
+prisma.config.json
+prisma.config.ts
+
+# Banco de dados local
+*.db
+*.db-journal
+
+# Outros
+new_theme/
+AUDITORIA*.md
+MELHORIAS*.md
+LEIA-ME-SERVIDOR.md
+LICENSE
+
