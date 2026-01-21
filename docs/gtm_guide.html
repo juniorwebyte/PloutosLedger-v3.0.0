@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia Go-to-Market | PloutosLedger v3.0.0</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>body { font-family: 'Inter', sans-serif; }</style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+    <div class="max-w-4xl mx-auto py-16 px-6">
+        <header class="mb-16 border-b pb-8">
+            <h1 class="text-5xl font-black text-slate-900 mb-4 tracking-tight">Guia Go-to-Market 🚀</h1>
+            <p class="text-xl text-slate-600">Roteiro estratégico para o lançamento comercial do PloutosLedger v3.0.0.</p>
+        </header>
+
+        <div class="space-y-12">
+            <!-- Passo 1 -->
+            <section>
+                <div class="flex items-center mb-4">
+                    <span class="bg-emerald-500 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold mr-4">1</span>
+                    <h2 class="text-2xl font-bold">Infraestrutura de Produção</h2>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+                    <ul class="space-y-3 text-slate-600">
+                        <li class="flex items-center"><span class="text-emerald-500 mr-2">✔</span> <strong>Frontend:</strong> Deploy na Vercel ou Netlify (conectado ao GitHub).</li>
+                        <li class="flex items-center"><span class="text-emerald-500 mr-2">✔</span> <strong>Backend:</strong> Supabase Pro (para backups automáticos e maior limite de conexões).</li>
+                        <li class="flex items-center"><span class="text-emerald-500 mr-2">✔</span> <strong>Domínio:</strong> Configurar SSL e DNS profissional (ex: app.ploutosledger.com).</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Passo 2 -->
+            <section>
+                <div class="flex items-center mb-4">
+                    <span class="bg-emerald-500 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold mr-4">2</span>
+                    <h2 class="text-2xl font-bold">Segurança e Hardening</h2>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+                    <p class="text-slate-600 mb-4">Antes de abrir para o público:</p>
+                    <ul class="space-y-3 text-slate-600">
+                        <li>• Aplicar o script <code>supabase_security_v2.sql</code> para ativar o RLS avançado.</li>
+                        <li>• Configurar <strong>Autenticação de Dois Fatores (2FA)</strong> no painel administrativo.</li>
+                        <li>• Definir limites de taxa (Rate Limiting) no firewall da Vercel/Cloudflare.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Passo 3 -->
+            <section>
+                <div class="flex items-center mb-4">
+                    <span class="bg-emerald-500 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold mr-4">3</span>
+                    <h2 class="text-2xl font-bold">Estratégia de Onboarding</h2>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+                    <p class="text-slate-600 mb-4">Para converter usuários da v2 para a v3:</p>
+                    <div class="bg-slate-50 p-4 rounded-lg border border-slate-100 italic text-sm">
+                        "O sistema detectará automaticamente dados antigos e oferecerá o botão 'Migrar para Nuvem', processado pelo nosso <code>MigrationService</code>."
+                    </div>
+                </div>
+            </section>
+
+            <!-- Passo 4 -->
+            <section>
+                <div class="flex items-center mb-4">
+                    <span class="bg-emerald-500 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold mr-4">4</span>
+                    <h2 class="text-2xl font-bold">Monitoramento e Suporte</h2>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+                    <ul class="space-y-3 text-slate-600">
+                        <li>• Ativar o <code>ErrorMonitoringService</code> para capturar bugs em tempo real.</li>
+                        <li>• Configurar alertas no Slack/Discord para falhas críticas.</li>
+                        <li>• Utilizar o <code>ChatService</code> integrado para suporte direto ao cliente.</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+        <div class="mt-16 p-8 bg-emerald-900 rounded-3xl text-white text-center">
+            <h3 class="text-3xl font-bold mb-4">Pronto para Decolar?</h3>
+            <p class="text-emerald-100 mb-8">O PloutosLedger v3.0.0 está em seu ápice técnico. O mercado espera por você.</p>
+            <button class="bg-white text-emerald-900 px-8 py-3 rounded-full font-bold hover:bg-emerald-50 transition-colors">Iniciar Deploy Agora</button>
+        </div>
+
+        <footer class="mt-16 text-center text-slate-400 text-sm">
+            &copy; 2026 PloutosLedger GTM Strategy - Webyte Desenvolvimentos.
+        </footer>
+    </div>
+</body>
+</html>

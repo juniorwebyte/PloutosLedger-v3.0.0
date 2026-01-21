@@ -1,0 +1,24 @@
+{
+  "common": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success"
+  },
+  "auth": {
+    "login": "Login",
+    "register": "Register",
+    "logout": "Logout",
+    "email": "Email",
+    "password": "Password"
+  },
+  "cashflow": {
+    "title": "Cash Flow",
+    "entries": "Income",
+    "exits": "Expenses",
+    "balance": "Current Balance",
+    "add_transaction": "New Transaction"
+  }
+}

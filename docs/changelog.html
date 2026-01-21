@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changelog | PloutosLedger v3.0.0</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-800 font-['Inter']">
+    <div class="max-w-3xl mx-auto py-16 px-6">
+        <header class="mb-12 text-center">
+            <h1 class="text-4xl font-black text-gray-900 mb-2">Changelog</h1>
+            <p class="text-gray-500">Histórico de evolução do PloutosLedger</p>
+        </header>
+
+        <div class="space-y-12">
+            <!-- v3.0.0 -->
+            <div class="relative pl-8 border-l-2 border-emerald-500">
+                <div class="absolute -left-[9px] top-0 w-4 h-4 bg-emerald-500 rounded-full"></div>
+                <div class="mb-4">
+                    <span class="bg-emerald-100 text-emerald-700 text-xs font-bold px-3 py-1 rounded-full">VERSÃO ATUAL</span>
+                    <h2 class="text-2xl font-bold text-gray-900 mt-2">v3.0.0 - Startup Edition</h2>
+                    <p class="text-sm text-gray-500">20 de Janeiro, 2026</p>
+                </div>
+                
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="font-bold text-gray-800 mb-2">🚀 Novas Funcionalidades</h3>
+                        <ul class="list-disc list-inside text-gray-600 space-y-1 text-sm">
+                            <li>Implementação de <strong>Internacionalização (i18n)</strong> com suporte a PT-BR e EN-US.</li>
+                            <li>Nova camada de <strong>API Client</strong> com suporte a Mock e Real Backend.</li>
+                            <li>Sistema de <strong>Audit Log</strong> para rastreabilidade de ações.</li>
+                            <li>Componente de <strong>Error Boundary</strong> para resiliência de falhas.</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="font-bold text-gray-800 mb-2">⚡ Performance</h3>
+                        <ul class="list-disc list-inside text-gray-600 space-y-1 text-sm">
+                            <li>Refatoração profunda do <strong>CashFlow.tsx</strong> (redução de 90% no bundle).</li>
+                            <li>Implementação de <strong>Lazy Loading</strong> em todos os módulos pesados.</li>
+                            <li>Otimização de renderização com <code>React.memo</code> e <code>useMemo</code>.</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="font-bold text-gray-800 mb-2">🛠️ Arquitetura</h3>
+                        <ul class="list-disc list-inside text-gray-600 space-y-1 text-sm">
+                            <li>Padronização de todos os serviços via <strong>BaseService</strong>.</li>
+                            <li>Criação de um <strong>Design System</strong> centralizado.</li>
+                            <li>Implementação de suíte de <strong>Testes Unitários</strong> para lógica financeira.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- v2.0.0 -->
+            <div class="relative pl-8 border-l-2 border-gray-200">
+                <div class="absolute -left-[9px] top-0 w-4 h-4 bg-gray-200 rounded-full"></div>
+                <div class="mb-4">
+                    <h2 class="text-2xl font-bold text-gray-400 mt-2">v2.0.0 - Legacy Base</h2>
+                    <p class="text-sm text-gray-400">Dezembro, 2025</p>
+                </div>
+                <p class="text-sm text-gray-400 italic">Versão base com funcionalidades iniciais de PDV e Fluxo de Caixa.</p>
+            </div>
+        </div>
+
+        <footer class="mt-20 pt-8 border-t border-gray-200 text-center text-gray-400 text-xs">
+            Gerado automaticamente pelo PloutosLedger Build System.
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design System | PloutosLedger v3.0.0</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="bg-slate-50 text-slate-900 font-['Inter']">
+    <div class="max-w-5xl mx-auto py-16 px-6">
+        <header class="mb-16 border-b pb-8">
+            <h1 class="text-4xl font-black text-slate-900 mb-2">Design System 🎨</h1>
+            <p class="text-lg text-slate-600">Guia de estilo e componentes visuais do PloutosLedger.</p>
+        </header>
+
+        <div class="space-y-16">
+            <!-- Cores -->
+            <section>
+                <h2 class="text-2xl font-bold mb-6">Paleta de Cores</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="space-y-2">
+                        <div class="h-20 bg-emerald-500 rounded-xl shadow-sm"></div>
+                        <p class="text-sm font-bold">Primary (Emerald 500)</p>
+                        <p class="text-xs text-slate-400">#10b981</p>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="h-20 bg-slate-900 rounded-xl shadow-sm"></div>
+                        <p class="text-sm font-bold">Dark (Slate 900)</p>
+                        <p class="text-xs text-slate-400">#0f172a</p>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="h-20 bg-blue-500 rounded-xl shadow-sm"></div>
+                        <p class="text-sm font-bold">Info (Blue 500)</p>
+                        <p class="text-xs text-slate-400">#3b82f6</p>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="h-20 bg-red-500 rounded-xl shadow-sm"></div>
+                        <p class="text-sm font-bold">Danger (Red 500)</p>
+                        <p class="text-xs text-slate-400">#ef4444</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Componentes -->
+            <section>
+                <h2 class="text-2xl font-bold mb-6">Componentes Base</h2>
+                <div class="bg-white p-8 rounded-3xl border border-slate-200 space-y-8">
+                    <div>
+                        <p class="text-xs font-bold text-slate-400 uppercase mb-4">Botões</p>
+                        <div class="flex flex-wrap gap-4">
+                            <button class="bg-emerald-500 text-white px-6 py-2 rounded-lg font-bold shadow-sm hover:bg-emerald-600 transition-colors">Primary Button</button>
+                            <button class="bg-slate-100 text-slate-700 px-6 py-2 rounded-lg font-bold hover:bg-slate-200 transition-colors">Secondary Button</button>
+                            <button class="border border-slate-200 text-slate-600 px-6 py-2 rounded-lg font-bold hover:bg-slate-50 transition-colors">Outline Button</button>
+                        </div>
+                    </div>
+
+                    <div>
+                        <p class="text-xs font-bold text-slate-400 uppercase mb-4">Cards</p>
+                        <div class="max-w-sm bg-white border border-slate-100 shadow-xl shadow-slate-200/50 p-6 rounded-2xl">
+                            <h3 class="font-bold text-lg mb-2">Título do Card</h3>
+                            <p class="text-sm text-slate-500">Este é um exemplo de como os cards são renderizados no sistema.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer class="mt-20 text-center text-slate-400 text-sm">
+            PloutosLedger v3.0.0 - Design System Guide.
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+{
+  "common": {
+    "save": "Salvar",
+    "cancel": "Cancelar",
+    "delete": "Excluir",
+    "loading": "Carregando...",
+    "error": "Erro",
+    "success": "Sucesso"
+  },
+  "auth": {
+    "login": "Entrar",
+    "register": "Cadastrar",
+    "logout": "Sair",
+    "email": "E-mail",
+    "password": "Senha"
+  },
+  "cashflow": {
+    "title": "Fluxo de Caixa",
+    "entries": "Entradas",
+    "exits": "Saídas",
+    "balance": "Saldo Atual",
+    "add_transaction": "Nova Transação"
+  }
+}
